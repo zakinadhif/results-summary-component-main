@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+  <main class="grid sm:justify-center sm:content-center min-h-screen">
+    <div class="flex flex-col sm:flex-row rounded-3xl sm:shadow-xl">
+      <header class="sm:w-64 bg-gradient-to-b from-[hsl(252,100%,67%)] to-[hsl(241,81%,54%)] sm:rounded-3xl rounded-b-3xl text-white py-2 pb-10 text-center">
+        <h1 class="text-pale-blue mb-1 mt-4">Your Result</h1>
+        
+        <section class="h-32 flex items-center justify-center mt-5 mb-1">
+          <div class="h-32 w-32 rounded-full flex flex-col items-center justify-center bg-gradient-to-b from-[hsla(256,72%,46%,1)] to-[hsla(241,72%,46%,0)]">
+            <p class="text-5xl font-extrabold">76</p>
+            <p class="text-sm text-pale-blue/50 tracking-tighter">of 100</p>
+          </div>
+        </section>
+
+        <p class="text-2xl font-bold mt-4 mb-1">Great</p>
+        <p class="sm:text-xs text-pale-blue px-10 my-2">You scored higher than 65% of the people who have taken these tests.</p>
+      </header>
+      <section class="relative sm:w-64 px-8 py-2 pb-20 grow">
+        <h2 class="font-bold text-dark-gray-blue mt-4 mb-1">Summary</h2>
+
+        <div class="space-y-2 my-4 text-sm">
+          <div class="flex justify-between bg-light-red/5 p-2.5 overflow-hidden rounded-lg">
+            <div>
+              <img src="assets/images/icon-reaction.svg" class="max-w-full mr-2 float-left" alt=""/>
+              <h3 class="text-light-red float-left">Reaction</h3>
+            </div>
+            <p>80 <span class="text-gray-500">/ 100</span></p>
+          </div>
+        
+          <div class="flex justify-between bg-orangey-yellow/5 p-2.5 overflow-hidden rounded-lg">
+            <div>
+              <img src="assets/images/icon-memory.svg" class="max-w-full mr-2 float-left" alt=""/>
+              <h3 class="text-orangey-yellow float-left">Memory</h3>
+            </div>
+            <p>92 <span class="text-gray-500">/ 100</span></p>
+          </div>
+        
+          <div class="flex justify-between bg-green-teal/5 p-2.5 overflow-hidden rounded-lg">
+            <div>
+              <img src="assets/images/icon-verbal.svg" class="max-w-full mr-2 float-left" alt=""/>
+              <h3 class="text-green-teal float-left">Verbal</h3>
+            </div>
+            <p>61 <span class="text-gray-500">/ 100</span></p>
+          </div>
+        
+          <div class="flex justify-between bg-cobalt-blue/5 p-2.5 overflow-hidden rounded-lg">
+            <div>
+              <img src="assets/images/icon-visual.svg" class="max-w-full mr-2 float-left" alt=""/>
+              <h3 class="text-cobalt-blue float-left">Visual</h3>
+            </div>
+            <p>72 <span class="text-gray-500">/ 100</span></p>
+          </div>
+        </div>
+      
+        <button class="bg-dark-gray-blue hover:bg-gradient-to-b from-[hsl(252,100%,67%)] to-[hsl(241,81%,54%)] text-white text-sm py-3 rounded-full absolute sm:bottom-8 bottom-4 right-8 left-8">Continue</button>    
+      </section>
+    </div>
+  </main>
+  
+  <footer class="py-4 text-sm text-center">
+    <p>
+      Challenge by <a class="text-blue-500" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a class="text-blue-500" href="https://zakinadhif.my.id/">ZakiNadhif</a>.
+    </p>
+  </footer>
+</body>
+</html>
